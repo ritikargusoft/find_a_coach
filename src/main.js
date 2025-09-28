@@ -9,22 +9,7 @@ import BaseBadge from './components/ui/BaseBadge.vue';
 import BaseSpinner from './components/ui/BaseSpinner.vue';
 import BaseDialog from './components/ui/BaseDialog.vue';
 
- import 'vuetify/styles'; // Global CSS
-    import { createVuetify } from 'vuetify';
-    import * as components from 'vuetify/components';
-    import * as directives from 'vuetify/directives';
-    import '@mdi/font/css/materialdesignicons.css'; // Icon library
-
-    const vuetify = createVuetify({
-      components,
-      directives,
-      icons: {
-        defaultSet: 'mdi', // Sets MDI as the default icon set
-      },
-    });
-
 const app = createApp(App)
-    app.use(vuetify);
 
 app.use(router);
 app.use(store);
